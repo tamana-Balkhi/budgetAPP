@@ -1,2 +1,13 @@
-<div id="<%= dom_id group %>">
-</div>
+<%= link_to group do %>
+  <p>
+    <strong><%= group.icon %></strong>
+  </p>
+
+  <p>
+    <strong><%= group.name %></strong>
+  </p>
+
+  <p>
+    <strong>$ <%= group.entities.sum(:amount) %></strong>
+  </p>
+<% end %>
