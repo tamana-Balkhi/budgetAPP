@@ -16,7 +16,7 @@ RSpec.describe 'Groups', type: :system do
 
   it 'should redirect to add new group' do
     visit groups_path
-    click_on "New Group"
+    click_on 'New Group'
     expect(page).to have_current_path(new_group_path)
   end
 end
