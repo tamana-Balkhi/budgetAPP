@@ -2,6 +2,9 @@
   <p>
     <strong><%= entity.name %></strong>
   </p>
+  <p>
+  <%= entity.created_at.strftime("%d/%m/%y")%>
+  </p>
 
   <p>
     <strong>$ <%= entity.amount %></strong>
