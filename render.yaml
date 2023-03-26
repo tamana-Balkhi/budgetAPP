@@ -1,7 +1,7 @@
 databases:
-  - name: MyBudget
-    databaseName: my_budget 
-    user: my_budget_user
+  - name: my_budget
+    databaseName: my_budget_zyow
+    user: my_budget_zyow_user
 
 services:
   - type: web
@@ -10,10 +10,9 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
-      - key: DATABASE_URLadd .
-      
+      - key: DATABASE_URL
         fromDatabase:
-          name: MyBudget
+          name: my_budget
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
