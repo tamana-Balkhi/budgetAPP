@@ -1,7 +1,7 @@
 databases:
   - name: my_budget
-    databaseName: my_budget
-    user: my_budget_user
+    databaseName: my_budget_zyow
+    user: my_budget_zyow_user
 
 services:
   - type: web
