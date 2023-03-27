@@ -1,11 +1,11 @@
 databases:
   - name: my_budget
-    databaseName: my_budget_zyow
-    user: my_budget_zyow_user
+    databaseName: my_budget_dxfr
+    user: my_budget_dxfr_user
 
 services:
   - type: web
-    name: MyBudget1
+    name: budget
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
