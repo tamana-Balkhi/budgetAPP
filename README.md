@@ -65,7 +65,7 @@
 
 ## live demo
 
-[live](https://mybudget1.onrender.com)
+[live](https://expenser.onrender.com/)
 
 ## 🚀 video <a name="live-demo"></a>
 
